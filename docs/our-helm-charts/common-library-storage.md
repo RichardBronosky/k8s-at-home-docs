@@ -219,11 +219,9 @@ Minimal config:
 persistence:
   config:
     enabled: true
-    type: custom
-    volumeSpec:
-      nfs:
-        server: 10.10.0.8
-        path: /tank/nas/library
+    type: nfs
+    server: 10.10.0.8
+    path: /tank/nas/library
 ```
 
 This will mount the NFS share `/tank/nas/library` on server `10.10.0.8` to `/config`.
